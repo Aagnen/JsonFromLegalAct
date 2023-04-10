@@ -1,0 +1,5 @@
+What it does: Extract Json file from the Polish Legal act
+
+Inputs: readable Legal act in pdf, formatted in a standarized way in Poland
+Process: looks for characteristic text patterns and signs that represent the break in sections and paragrafs
+Outpust: easy to process file - Json divided into sections
