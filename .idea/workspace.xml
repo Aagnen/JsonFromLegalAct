@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="223778ed-0ca1-4be5-ae76-b1ebe441a4e1" name="Changes" comment="Clarified the situation when the key already exists in the dictionary.">
+    <list default="true" id="223778ed-0ca1-4be5-ae76-b1ebe441a4e1" name="Changes" comment="Changing the code to be appropriate for various formatting.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Json/1_D20212351Lj.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDForyginaly/1_D20212351Lj.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/3_D20221679.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/1_D20212351Lj.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3c6ee1b1-d596-4073-9a8a-be233eed3690" />
+        <option name="url" value="https://github.com/Aagnen/JsonFromLegalAct.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687008589056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changing the code to be appropriate for various formatting.">
+      <created>1687022502165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687022502165</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changing the code to be appropriate for various formatting.">
+      <created>1687022869535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687022869536</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clarified the situation when the key already exists in the dictionary." />
-    <option name="LAST_COMMIT_MESSAGE" value="Clarified the situation when the key already exists in the dictionary." />
+    <MESSAGE value="Changing the code to be appropriate for various formatting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing the code to be appropriate for various formatting." />
   </component>
 </project>

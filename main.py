@@ -6,8 +6,9 @@ import Methods
 
 # ----------------------------------------CONSTANTS --------------------------------------------------#
 
-H_MAIN_TEXT = 9  # the height of main text, larger that footnotes -> so it will exclude them (11 for large, 9 for small)
-FILENAME = '3_D20221679'
+H_MAIN_TEXT = 11  # the height of main text, larger that footnotes -> so it will exclude them
+            # (11 for large, 9 for small)
+FILENAME = '1_D20212351Lj'
 
 # ---------------------------------------- PREPARE FILE --------------------------------------------------#
 # creating a pdf file object
@@ -36,7 +37,7 @@ for page in pdfReader.pages:
     parts = []
     text = page.extract_text(visitor_text=visitor_body)
     text = "".join(parts)
-    print(f' {pdfReader.get_page_number(page)}', end=" ")
+    #print(f' {pdfReader.get_page_number(page)}', end=" ")
     raw_text = raw_text + "\n" + text
 
 print('\nText extracted')
@@ -44,8 +45,18 @@ print('\nText extracted')
 
 # ---------------------------------------- PROCESSING --------------------------------------------------#
 
+dict_out = {}
 
-dict_out = Methods.split_all(raw_text)
+dict_art = Methods.universal_split(raw_text, r"Art\.\s*\d+[a-z]?\.", r"Art\.\s*", "Art.")
+dict_out = dict_art
+
+for key in dict_art:
+    content = dict_art[key]
+    dict_ust = Methods.universal_split(content,  r"\d{1,4}[a-z]{,3}[.]\s*", r"\n", "Ust.")
+    # for key_1 in dict_ust:
+    #     content_1 = dict_ust[key_1]
+    #     dict_pdp = Methods.universal_split(content_1, r"\n\d{1,4}[a-z]{,3}[.]\s+", r"(\n)\s*", "Ust.")
+    dict_out[key] = dict_ust
 
 print('Text processed')
 
