@@ -1,14 +1,33 @@
 # importing required modules
-import pypdf
+import PyPDF2
 import re
 import json
 import Methods
 
 # ----------------------------------------CONSTANTS --------------------------------------------------#
 
-H_MAIN_TEXT = 11  # the height of main text, larger that footnotes -> so it will exclude them
-            # (11 for large, 9 for small)
-FILENAME = '1_D20212351Lj'
+# FILENAME = '1_D20212351Lj'
+# H_MAIN_TEXT = 11  # the height of main text, larger that footnotes -> so it will exclude them
+# ART_LOOKOUT = r"Art\.\s*\d+[a-z]?\."
+# UST_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[.]\s*"
+# PP_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[)]\s*"
+# KEEP_IN_NAME = r"\d{1,4}[a-z]{,3}"
+
+# FILENAME = '2_D20221225'
+# H_MAIN_TEXT = 9
+# ART_LOOKOUT = r"§\s*\d+[a-z]?\.\s*"
+# UST_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[.]\s*"
+# PP_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[)]\s*"
+# KEEP_IN_NAME = r"\d{1,4}[a-z]{,3}"
+
+FILENAME = '3_D20221679'
+H_MAIN_TEXT = 9
+ART_LOOKOUT = r"§\s*\d+[a-z]?\.\s*"
+UST_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[.]\s*"
+PP_LOOKOUT = r"\n+\s*\d{1,4}[a-z]{,3}[)]\s*"
+KEEP_IN_NAME = r"\d{1,4}[a-z]{,3}"
+
+
 
 # ---------------------------------------- PREPARE FILE --------------------------------------------------#
 # creating a pdf file object
@@ -16,7 +35,7 @@ pdfFileObj = open(f'PDForyginaly/{FILENAME}.pdf', 'rb')
 print("Opened")
 
 # creating a pdf reader object
-pdfReader = pypdf.PdfReader(pdfFileObj)
+pdfReader = PyPDF2.PdfReader(pdfFileObj)
 print("Read")
 
 
@@ -47,25 +66,27 @@ print('\nText extracted')
 
 dict_out = {}
 
-dict_art = Methods.universal_split(raw_text, r"Art\.\s*\d+[a-z]?\.", r"Art\.\s*", "Art.")
+dict_art = Methods.universal_split(raw_text, ART_LOOKOUT, KEEP_IN_NAME, "Art.")
 dict_out = dict_art
 
 for key in dict_art:
     content = dict_art[key]
-    dict_ust = Methods.universal_split(content,  r"\d{1,4}[a-z]{,3}[.]\s*", r"\n", "Ust.")
-    # for key_1 in dict_ust:
-    #     content_1 = dict_ust[key_1]
-    #     dict_pdp = Methods.universal_split(content_1, r"\n\d{1,4}[a-z]{,3}[.]\s+", r"(\n)\s*", "Ust.")
+    dict_ust = Methods.universal_split(content,  UST_LOOKOUT, KEEP_IN_NAME, "Ust.")
+    for key_1 in dict_ust:
+        content_1 = dict_ust[key_1]
+        dict_pdp = Methods.universal_split(content_1, PP_LOOKOUT, KEEP_IN_NAME, "Pp.")
+        dict_ust[key_1] = dict_pdp
+
     dict_out[key] = dict_ust
 
 print('Text processed')
 
 # ---------------------------------------- SAVE --------------------------------------------------#
 
-with open(f"text/{FILENAME}.txt", "w") as outfile:
+with open(f"text/{FILENAME}.txt", "w", encoding='utf-8') as outfile:
     outfile.write(raw_text)
 
-with open(f"Json/{FILENAME}.json", "w") as outfile:
+with open(f"Json/{FILENAME}.json", "w", encoding='utf-8') as outfile:
     json.dump(dict_out, outfile)
 
 print('Files saved')

@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="223778ed-0ca1-4be5-ae76-b1ebe441a4e1" name="Changes" comment="Changing the code to be appropriate for various formatting.">
+      <change beforePath="$PROJECT_DIR$/.idea/23_04_02-pdf_reader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/23_04_02-pdf_reader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Json/3_D20221679.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/23_04_02-pdf_reader/FileContentIndex/701f1adf-77b9-4bdb-acc8-ffa23977176d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/1_D20212351Lj.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDForyginaly/2_D20221225.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PDForyginaly/2_D20221225.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDForyginaly/3_D20221679.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PDForyginaly/3_D20221679.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/1_D20212351Lj.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/3_D20221679.txt" beforeDir="false" afterPath="$PROJECT_DIR$/text/3_D20221679.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dyski online/OneDrive - Politechnika Warszawska/Prywatne/22_07-Programowanie/22_10_19-quizzler&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/dyski_online/OneDrive - Politechnika Warszawska/Prywatne/23_01-Strona-pytan/03_Prototyp/23_04_02-pdf_reader",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="23_04_02-pdf_reader" />
