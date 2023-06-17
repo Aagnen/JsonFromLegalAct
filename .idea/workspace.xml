@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="223778ed-0ca1-4be5-ae76-b1ebe441a4e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Json/1_D20212351Lj.json" beforeDir="false" afterPath="$PROJECT_DIR$/Json/1_D20212351Lj.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Methods.py" afterDir="false" />
+    <list default="true" id="223778ed-0ca1-4be5-ae76-b1ebe441a4e1" name="Changes" comment="Clarified the situation when the key already exists in the dictionary.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/1_D20212351Lj.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDForyginaly/1_D20212351Lj.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/1_D20212351Lj.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680451201240</updated>
     </task>
+    <task id="LOCAL-00001" summary="Clarified the situation when the key already exists in the dictionary.">
+      <created>1687008589056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687008589056</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,5 +95,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Clarified the situation when the key already exists in the dictionary." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clarified the situation when the key already exists in the dictionary." />
   </component>
 </project>

@@ -6,11 +6,11 @@ import Methods
 
 # ----------------------------------------CONSTANTS --------------------------------------------------#
 
-H_MAIN_TEXT = 11  # the height of main text, larger that footnotes -> so it will exclude them
+H_MAIN_TEXT = 9  # the height of main text, larger that footnotes -> so it will exclude them (11 for large, 9 for small)
+FILENAME = '3_D20221679'
 
 # ---------------------------------------- PREPARE FILE --------------------------------------------------#
 # creating a pdf file object
-FILENAME = '1_D20212351Lj'
 pdfFileObj = open(f'PDForyginaly/{FILENAME}.pdf', 'rb')
 print("Opened")
 
@@ -26,7 +26,7 @@ def visitor_body(text, cm, tm, font_dict, font_size):
     h = font_size
     # if 50 < y < 720 and h > 11:
     #     parts.append(text)
-    if h > 11:
+    if h > H_MAIN_TEXT:
         parts.append(text)
     return parts
 
@@ -36,10 +36,10 @@ for page in pdfReader.pages:
     parts = []
     text = page.extract_text(visitor_text=visitor_body)
     text = "".join(parts)
-    # print(f' {pdfReader.get_page_number(page)}', end=" ")
+    print(f' {pdfReader.get_page_number(page)}', end=" ")
     raw_text = raw_text + "\n" + text
 
-print('Text extracted')
+print('\nText extracted')
 
 
 # ---------------------------------------- PROCESSING --------------------------------------------------#
